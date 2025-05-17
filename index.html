@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+        <header>
+            <div><input id="seed-color" type="color" class="seed-color"></div>
+            
+            <div>
+               <!-- <label for="color-scheme">Choose color scheme:</label> -->
+                <select id="color-scheme" name="color-scheme" class="scheme">
+                    <option value="">--Select--</option>
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+            </div>
+            
+            <div>
+                <button id="btn">Get color scheme</button>
+            </div>
+        </header>
+        
+        <main id="main">
+            <div id="display-shceme"></div>
+        </main>
+        
+        <script src="index.js"></script>
+    </body>
+    <footer>
+        <p>Color scheme generator</p>
+        <p>By <a href="azeezkola.com">Azeez Kola</a></p>
+    </footer>
+</html>
