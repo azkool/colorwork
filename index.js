@@ -31,7 +31,7 @@ btnEl.addEventListener("click", () =>{
                 html += 
                 `
                     <div id="colorS" class="color" style="background-color:${mycolor.hex.value}">
-                        <button class="pColor" id="pColor">${mycolor.hex.value}</button>
+                        <button class="pColor" id="pColor" data-color="${mycolor.hex.value}">${mycolor.hex.value}</button>
                     </div>
                 `
             }
