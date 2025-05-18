@@ -36,16 +36,15 @@ btnEl.addEventListener("click", () =>{
                 `
             }
             display.innerHTML = html
+            // Add click event listeners to all .pColor elements
+            document.querySelectorAll('.pColor').forEach(el => {
+                el.addEventListener('click', function() {
+                    const color = this.getAttribute('data-color')
+                    navigator.clipboard.writeText(color)
+                        .then(() => alert(`Copied: ${color}`))
+                        .catch(() => alert('Failed to copy!'))
+                })
+            
+            })
         })
-})
-
-// Add click event listeners to all .pColor elements
-    document.querySelectorAll('.pColor').forEach(el => {
-        el.addEventListener('click', function() {
-            const color = this.getAttribute('data-color')
-            navigator.clipboard.writeText(color)
-                .then(() => alert(`Copied: ${color}`))
-                .catch(() => alert('Failed to copy!'))
-        })
-
 })
